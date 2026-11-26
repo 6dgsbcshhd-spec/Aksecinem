@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100d0d">
+<title>AkseCinema — кино вместе</title>
+<style>
+:root{--bg:#100d0d;--panel:#1b1515;--panel2:#241b1b;--line:#3a2928;--red:#c84b43;--gold:#d8b77a;--muted:#b9a9a4;--white:#fff8f2}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#49221f 0,transparent 38%),var(--bg);color:var(--white);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{cursor:pointer;border:0}a{color:var(--gold)}.wrap{max-width:1180px;margin:auto;padding:24px}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:12px 0 28px}.brand{font-weight:900;letter-spacing:.13em;font-size:19px}.brand span{color:var(--gold)}.tag{color:var(--muted);font-size:13px}.hero{padding:52px 0 38px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.22em;font-size:11px;font-weight:800}.hero h1{font-size:clamp(40px,7vw,76px);line-height:.99;letter-spacing:-.055em;margin:15px 0 20px}.hero h1 em{font-style:normal;color:var(--gold)}.lead{color:#c8b8b1;max-width:570px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{padding:13px 19px;border-radius:12px;background:linear-gradient(135deg,#d35b4e,#96352f);color:white;font-weight:750;box-shadow:0 8px 24px #8e322b38}.btn.secondary{background:#2a2020;border:1px solid var(--line);box-shadow:none}.btn.gold{background:linear-gradient(135deg,#e1c58f,#a77e42);color:#21160d}.posterwall{height:330px;border:1px solid #62413b;border-radius:25px;background:linear-gradient(145deg,#44201d,#1b1313 65%);position:relative;overflow:hidden;box-shadow:0 28px 80px #0008}.posterwall:before,.posterwall:after{content:"";position:absolute;border-radius:50%;filter:blur(2px)}.posterwall:before{width:260px;height:260px;background:#b54c3b55;right:-30px;top:-40px}.posterwall:after{width:200px;height:200px;background:#d5b47b30;left:-30px;bottom:-70px}.screen-art{position:absolute;inset:30px 35px 50px;border:1px solid #b38c6744;border-radius:14px;background:linear-gradient(160deg,#201717,#5a2924 50%,#171111);display:grid;place-items:center;text-align:center;z-index:1}.screen-art strong{font-size:42px;letter-spacing:.14em}.screen-art small{display:block;color:var(--gold);letter-spacing:.25em}.seatrow{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#d8b77a;letter-spacing:.7em;font-size:20px}.section{margin:35px 0}.section h2{font-size:27px;margin:0 0 7px}.sub{color:var(--muted);margin:0 0 18px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile,.panel{background:linear-gradient(145deg,#211919,#181212);border:1px solid var(--line);border-radius:18px;padding:20px}.tile .ico{font-size:25px}.tile h3{margin:10px 0 4px}.tile p{color:var(--muted);margin:0;font-size:14px}.hidden{display:none!important}.view{margin-top:18px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.field{background:#120e0e;border:1px solid #4a3532;color:var(--white);padding:12px 13px;border-radius:11px;min-width:0;outline:none}.field:focus{border-color:var(--gold)}.field.full{width:100%}.field.small{max-width:220px}.panel h2,.panel h3{margin-top:0}.muted{color:var(--muted)}.roomhead{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}.code{font-size:22px;color:var(--gold);font-weight:900;letter-spacing:.16em}.members{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.member{background:#302322;border:1px solid #513b36;padding:7px 10px;border-radius:99px;font-size:13px}.layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.8fr);gap:16px}.video{width:100%;max-height:520px;background:#050505;border-radius:14px;display:block}.video-wrap{background:#090707;border:1px solid var(--line);border-radius:17px;padding:12px}.controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chatlog{height:250px;overflow:auto;background:#110d0d;border:1px solid var(--line);border-radius:12px;padding:10px;margin:12px 0}.msg{margin:7px 0;overflow-wrap:anywhere}.msg b{color:var(--gold)}.food{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #392927}.food:last-child{border:0}.seatmap{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-width:340px}.seat{padding:11px 3px;border-radius:9px;background:#302321;color:#e9d6c6;border:1px solid #5a3d37}.seat.selected{background:#a64b40;border-color:#e9a69a}.seat.taken{opacity:.35;cursor:not-allowed}.notice{padding:12px 14px;border-radius:12px;background:#2a2118;color:#e6c990;border:1px solid #5a452a;font-size:13px}.footer{color:#887b76;text-align:center;padding:35px 0 15px;font-size:12px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:25px}.posterwall{height:250px}.grid{grid-template-columns:1fr}.layout{grid-template-columns:1fr}.wrap{padding:17px}.hero h1{font-size:50px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand">AKSE<span>CINEMA</span></div><div class="tag">Ваш личный зал для совместных вечеров</div></header>
+<main id="home">
+<section class="hero"><div><div class="eyebrow">PRIVATE CINEMA · UP TO 5 PEOPLE</div><h1>Кино ближе,<br><em>когда вместе.</em></h1><p class="lead">Создайте личный кинозал, пригласите друзей по коду, выберите места и смотрите видео синхронно — с общим чатом и уютной атмосферой.</p><div class="actions"><button class="btn" id="createBtn">＋ Создать комнату</button><button class="btn secondary" id="showJoin">Войти по коду</button></div></div><div class="posterwall"><div class="screen-art"><div><small>TONIGHT PRESENTS</small><strong>AKSE<br>CINEMA</strong><small>YOUR PRIVATE SCREEN</small></div></div><div class="seatrow">▰ ▰ ▰ ▰ ▰</div></div></section>
+<section class="section"><h2>Ваш вечер — ваши правила</h2><p class="sub">Всё необходимое для домашнего кинотеатра в одном месте.</p><div class="grid"><article class="tile"><div class="ico">🎞️</div><h3>Общий экран</h3><p>Play, пауза и перемотка синхронизируются для всей комнаты.</p></article><article class="tile"><div class="ico">💬</div><h3>Живой чат</h3><p>Обсуждайте сцены и делитесь впечатлениями во время просмотра.</p></article><article class="tile"><div class="ico">🍿</div><h3>Кино-бар</h3><p>Выбирайте виртуальные места, попкорн и напитки.</p></article></div></section>
+</main>
+
+<section id="joinView" class="view panel hidden"><h2>Войти в кинозал</h2><p class="muted">Введите код, который отправил вам создатель комнаты.</p><div class="row"><input id="joinCode" class="field small" maxlength="6" placeholder="КОД КОМНАТЫ"><input id="displayName" class="field" maxlength="24" placeholder="Ваше имя"><button id="joinBtn" class="btn">Войти</button><button class="btn secondary" id="backHome">Назад</button></div><p id="joinError" class="muted"></p></section>
+
+<section id="roomView" class="view hidden">
+<div class="panel roomhead"><div><div class="eyebrow">PRIVATE SCREENING ROOM</div><h2 style="margin:5px 0">Ваш кинозал</h2><div class="muted">Код приглашения: <span id="roomCode" class="code"></span> <button class="btn secondary" id="copyCode" style="padding:7px 10px">Копировать</button></div></div><div><span class="member" id="hostLabel">Вы в комнате</span><button class="btn secondary" id="leaveBtn">Выйти</button></div><div style="width:100%"><div class="muted">Участники (максимум 5)</div><div id="memberList" class="members"></div></div></div>
+<div class="layout view">
+<div class="panel">
+<h3>Большой экран</h3>
+<div class="video-wrap"><video id="player" class="video" controls playsinline crossorigin="anonymous"></video><div class="controls"><input id="videoUrl" class="field" style="flex:1" placeholder="Прямая ссылка на MP4 / WebM / OGG"><button class="btn gold" id="loadVideo">Открыть видео</button></div><p class="muted" style="font-size:12px;margin:9px 0 0">Поддерживаются прямые ссылки на видеофайлы. Ссылки на страницы YouTube, онлайн-кинотеатров и обычные веб-страницы не являются прямыми видеоссылками.</p></div>
+<div class="controls"><button class="btn" id="playBtn">▶ Воспроизвести всем</button><button class="btn secondary" id="pauseBtn">Ⅱ Пауза всем</button><button class="btn secondary" id="syncBtn">↻ Синхронизировать</button></div>
+<div class="notice" style="margin-top:13px">Управление просмотром доступно ведущему комнаты. Если браузер блокирует автозапуск со звуком, участнику нужно один раз нажать Play на своём устройстве.</div>
+</div>
+<aside class="panel"><h3>💬 Общий чат</h3><div id="chatLog" class="chatlog"></div><div class="row"><input id="chatInput" class="field" style="flex:1" maxlength="500" placeholder="Написать сообщение…"><button id="sendMsg" class="btn">➤</button></div><div class="section"><h3>🍿 Кино-бар</h3><div class="food"><span>🍿 Попкорн</span><button class="btn secondary order" data-item="Попкорн">Выбрать</button></div><div class="food"><span>🥤 Кола</span><button class="btn secondary order" data-item="Кола">Выбрать</button></div><div class="food"><span>🧀 Начос</span><button class="btn secondary order" data-item="Начос">Выбрать</button></div><div class="food"><span>🍫 Шоколад</span><button class="btn secondary order" data-item="Шоколад">Выбрать</button></div><p id="foodStatus" class="muted" style="font-size:13px"></p></div></aside>
+</div>
+<div class="panel section"><h3>Выберите место в зале</h3><p class="muted">Каждый участник может занять одно свободное место.</p><div style="text-align:center;max-width:340px;margin:0 0 12px;color:var(--gold);letter-spacing:.3em">ЭКРАН</div><div id="seatMap" class="seatmap"></div><p id="seatStatus" class="muted"></p></div>
+</section>
+<div class="footer">AKSECINEMA · Сделано для совместных вечеров</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script>
+/* 1) Вставьте конфигурацию своего Firebase-проекта вместо значений ниже. */
+const firebaseConfig = {
+  apiKey: "AIzaSyCn7mkKeBAK6GohYE2oTvTOoqYebynwE6g",
+  authDomain: "aksecinema.firebaseapp.com",
+  databaseURL: "https://aksecinema-default-rtdb.europe-west1.firebasedatabase.app/",
+  projectId: "aksecinema",
+  storageBucket: "aksecinema.firebasestorage.app",
+  messagingSenderId: "1028035964479",
+  appId: "1:1028035964479:web:b0d638763e16e1e798928a"
+};
+
+const $ = id => document.getElementById(id);
+const home = $("home"), joinView = $("joinView"), roomView = $("roomView");
+let auth, db, uid=null, roomCode=null, roomRef=null, isHost=false, myName="Гость";
+let roomListener=null, chatListener=null, memberListener=null, stateListener=null;
+let lastRemoteChange=0, suppressSync=false, currentRoomData=null, selectedSeat=null;
+
+function show(view){home.classList.toggle("hidden",view!=="home");joinView.classList.toggle("hidden",view!=="join");roomView.classList.toggle("hidden",view!=="room");}
+function setError(msg){$("joinError").textContent=msg;}
+function configured(){return firebaseConfig.apiKey!=="PASTE_API_KEY" && firebaseConfig.projectId==="aksecinema" && firebaseConfig.databaseURL==="https://aksecinema-default-rtdb.europe-west1.firebasedatabase.app/";}
+async function init(){
+ if(!configured()){alert("Сначала вставьте Firebase config в index.html. Инструкция — в README.");return false;}
+ try{
+  if(!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+  auth=firebase.auth(); db=firebase.database();
+  const cred=await auth.signInAnonymously(); uid=cred.user.uid; return true;
+ }catch(e){alert("Ошибка Firebase: "+e.message+"\nПроверьте настройки проекта и Anonymous Authentication.");return false;}
+}
+function makeCode(){const chars="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";let s="";for(let i=0;i<6;i++)s+=chars[Math.floor(Math.random()*chars.length)];return s;}
+async function createRoom(){
+ if(!await init())return;
+ myName=prompt("Как вас называть?","Хозяин")?.trim().slice(0,24)||"Хозяин";
+ let code=makeCode(), ref=db.ref("rooms/"+code);
+ for(let i=0;i<5;i++){const snap=await ref.get();if(!snap.exists())break;code=makeCode();ref=db.ref("rooms/"+code);}
+ const now= firebase.database.ServerValue.TIMESTAMP;
+ const data={host:uid,createdAt:now,members:{[uid]:{name:myName,joinedAt:now,online:true}},state:{url:"",playing:false,currentTime:0,updatedAt:now,updatedBy:uid},messages:{},seats:{}};
+ try{await ref.set(data);await enterRoom(code,true);}catch(e){alert("Не удалось создать комнату: "+e.message);}
+}
+async function joinRoom(code,name){
+ if(!await init())return;
+ code=code.trim().toUpperCase();if(!/^[A-Z0-9]{6}$/.test(code)){setError("Код должен состоять из 6 символов.");return;}
+ myName=name.trim().slice(0,24)||"Гость";
+ const ref=db.ref("rooms/"+code);
+ try{
+  const roomSnap=await ref.get();
+  if(!roomSnap.exists()){setError("Комната не найдена.");return;}
+  const memberRef=ref.child("members/"+uid);
+  const result=await memberRef.set({name:myName,joinedAt:firebase.database.ServerValue.TIMESTAMP,online:true});
+  await enterRoom(code,false);
+ }catch(e){setError("Не удалось войти. Возможно, в комнате уже 5 участников. "+e.message);}
+}
+async function enterRoom(code,host){
+ roomCode=code;isHost=host;roomRef=db.ref("rooms/"+code);
+ $("roomCode").textContent=code;$("hostLabel").textContent=host?"Вы — ведущий":"Вы — участник";
+ show("room");
+ const memberRef=roomRef.child("members/"+uid);
+ memberRef.onDisconnect().remove();
+ await memberRef.update({online:true,name:myName});
+ attachListeners();
+}
+function detachListeners(){
+ if(!roomRef)return;
+ roomRef.child("members").off();roomRef.child("messages").off();roomRef.child("state").off();
+}
+function attachListeners(){
+ roomRef.child("members").on("value",snap=>{
+  const members=snap.val()||{};const list=$("memberList");list.innerHTML="";
+  Object.entries(members).filter(([id,m])=>m&&m.online).forEach(([id,m])=>{
+   const span=document.createElement("span");span.className="member";span.textContent=(m.name||"Гость")+(id===uid?" · вы":"")+(id===currentRoomData?.host?" · ведущий":"");list.appendChild(span);
+  });
+  drawSeats(currentRoomData?.seats||{},members);
+ });
+ roomRef.child("messages").limitToLast(80).on("value",snap=>{
+  const log=$("chatLog");log.innerHTML="";
+  snap.forEach(child=>{const m=child.val();const div=document.createElement("div");div.className="msg";const b=document.createElement("b");b.textContent=(m.name||"Гость")+": ";const span=document.createElement("span");span.textContent=m.text||"";div.append(b,span);log.appendChild(div);});
+  log.scrollTop=log.scrollHeight;
+ });
+ roomRef.on("value",snap=>{
+  currentRoomData=snap.val();if(!currentRoomData){alert("Комната больше не существует.");leaveRoom();return;}
+  isHost=currentRoomData.host===uid;$("hostLabel").textContent=isHost?"Вы — ведущий":"Вы — участник";
+  $("playBtn").disabled=!isHost;$("pauseBtn").disabled=!isHost;$("loadVideo").disabled=!isHost;
+  drawSeats(currentRoomData.seats||{},currentRoomData.members||{});
+ });
+ roomRef.child("state").on("value",snap=>applyRemoteState(snap.val()));
+}
+function drawSeats(seats,members){
+ const map=$("seatMap");map.innerHTML="";
+ for(let i=1;i<=10;i++){const occupant=Object.entries(seats||{}).find(([k,v])=>v===i);const owner=occupant?.[0];const b=document.createElement("button");b.className="seat"+(selectedSeat===i?" selected":"")+(owner&&owner!==uid?" taken":"");b.textContent="Место "+i;b.disabled=!!owner&&owner!==uid;b.onclick=()=>chooseSeat(i);map.appendChild(b);}
+ const mine=Object.entries(seats||{}).find(([k,v])=>k===uid);$("seatStatus").textContent=mine?"Вы выбрали место №"+mine[1]:"Место пока не выбрано.";
+}
+async function chooseSeat(n){
+ const seatsRef=roomRef.child("seats");let ok=false;
+ await seatsRef.transaction(seats=>{seats=seats||{};for(const [id,num] of Object.entries(seats))if(id===uid||num===n)delete seats[id];seats[uid]=n;ok=true;return seats;});
+ if(ok){selectedSeat=n;drawSeats(currentRoomData?.seats||{},currentRoomData?.members||{});}
+}
+function applyRemoteState(state){
+ if(!state)return;const video=$("player");if(!state.url)return;
+ if(video.dataset.url!==state.url){video.dataset.url=state.url;video.src=state.url;video.load();}
+ const now=Date.now();if(now-lastRemoteChange<700)return;lastRemoteChange=now;
+ const target=Math.max(0,Number(state.currentTime)||0);
+ if(Math.abs((video.currentTime||0)-target)>1.5){try{video.currentTime=target;}catch(e){}}
+ if(state.playing){const p=video.play();if(p&&p.catch)p.catch(()=>{});}else video.pause();
+}
+async function publishState(playing,seekTime){
+ if(!isHost||!roomRef)return;
+ const v=$("player");await roomRef.child("state").update({url:v.currentSrc||v.src||"",playing,currentTime:typeof seekTime==="number"?seekTime:v.currentTime||0,updatedAt:firebase.database.ServerValue.TIMESTAMP,updatedBy:uid});
+}
+$("createBtn").onclick=createRoom;
+$("showJoin").onclick=()=>show("join");
+$("backHome").onclick=()=>show("home");
+$("joinBtn").onclick=()=>joinRoom($("joinCode").value,$("displayName").value);
+$("joinCode").addEventListener("input",e=>e.target.value=e.target.value.toUpperCase().replace(/[^A-Z0-9]/g,""));
+$("copyCode").onclick=async()=>{try{await navigator.clipboard.writeText(roomCode);$("copyCode").textContent="Скопировано!";setTimeout(()=>$("copyCode").textContent="Копировать",1500);}catch(e){alert("Код комнаты: "+roomCode);}};
+$("loadVideo").onclick=async()=>{const url=$("videoUrl").value.trim();if(!/^https?:\/\//i.test(url)){alert("Вставьте корректную прямую ссылку на видеофайл.");return;}const v=$("player");v.src=url;v.dataset.url=url;v.load();await publishState(false,0);};
+$("playBtn").onclick=()=>publishState(true);
+$("pauseBtn").onclick=()=>publishState(false);
+$("syncBtn").onclick=()=>{if(isHost)publishState(!$("player").paused);else applyRemoteState(currentRoomData?.state);};
+$("player").addEventListener("play",()=>{if(isHost)publishState(true);});
+$("player").addEventListener("pause",()=>{if(isHost&&!$("player").ended)publishState(false);});
+$("player").addEventListener("seeked",()=>{if(isHost)publishState(!$("player").paused,$("player").currentTime);});
+$("player").addEventListener("timeupdate",()=>{if(isHost&&$("player").paused===false&&Math.floor($("player").currentTime)%8===0){/* periodic correction handled by explicit actions */}});
+async function sendMessage(text){
+ text=text.trim();if(!text||!roomRef)return;
+ await roomRef.child("messages").push({uid,name:myName,text:text.slice(0,500),createdAt:firebase.database.ServerValue.TIMESTAMP});
+}
+$("sendMsg").onclick=()=>{sendMessage($("chatInput").value);$("chatInput").value="";};
+$("chatInput").addEventListener("keydown",e=>{if(e.key==="Enter")$("sendMsg").click();});
+document.querySelectorAll(".order").forEach(b=>b.onclick=()=>{$("foodStatus").textContent="Вы выбрали: "+b.dataset.item+" 🍿";sendMessage("Заказ в кино-баре: "+b.dataset.item);});
+async function leaveRoom(){
+ if(roomRef&&uid){try{await roomRef.child("members/"+uid).remove();await roomRef.child("seats/"+uid).remove();}catch(e){}}
+ detachListeners();roomRef=null;roomCode=null;currentRoomData=null;selectedSeat=null;show("home");
+}
+$("leaveBtn").onclick=leaveRoom;
+</script>
+</body></html>
